@@ -1,0 +1,32 @@
+body {
+    background-color: lightgreen; 
+}
+
+h1 {
+    color: blue;               
+    font-family: sans-serif;   
+    background-color: lightgray; 
+}
+
+hr {
+    border: 2px solid black;   
+}
+
+table {
+    background-color: aqua;    
+    border-color: pink;        
+    border-collapse: collapse; 
+}
+
+th {
+    color: white;              
+    font-weight: bold;         
+    text-align: center;        
+    padding: 5px;             
+    border: 2px solid pink;
+}
+
+td {
+    padding: 5px;              
+    border: 2px solid pink;    
+}
