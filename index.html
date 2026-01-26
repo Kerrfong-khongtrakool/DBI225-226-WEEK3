@@ -17,12 +17,19 @@
 <div id="main-container">
     <form action="https://formsubmit.co/benjiefon269@gmail.com" method="POST">
         
-        <div class="form-group">
-            <label class="form-label">ชื่อ-นามสกุล</label>
-            <input type="text" name="name" class="input-control" placeholder="ระบุชื่อของคุณ" title="กรุณากรอกเฉพาะตัวอักษรเท่านั้น" required>
-        </div>
+<div class="form-group">
+    <label class="form-label">ชื่อ-นามสกุล</label>
+    <input 
+        type="text" 
+        name="name" 
+        class="input-control" 
+        placeholder="ระบุชื่อของคุณ" 
+        oninput="this.value = this.value.replace(/[0-9!@#$%^&*()_+-={}\[\]:;<>?\/\\|`~]/g, '');"
+        title="กรุณากรอกเฉพาะตัวอักษรเท่านั้น" 
+        required>
+</div>
 
-        <div class="form-group">
+<div class="form-group">
     <label class="form-label">เบอร์โทรศัพท์</label>
     <input 
         type="tel" 
@@ -36,10 +43,17 @@
         required>
 </div>
 
-        <div class="form-group">
-            <label class="form-label">อีเมล</label>
-            <input type="email" name="_replyto" class="input-control" placeholder="SPUKK1234@mail.com" title="กรุณากรอกอีเมลให้ถูกต้อง" required>
-        </div>
+<div class="form-group">
+    <label class="form-label">อีเมล</label>
+    <input 
+        type="email" 
+        name="email"
+        class="input-control" 
+        placeholder="SPUKK1234@email.com" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        title="กรุณากรอกอีเมลให้ถูกต้อง" 
+        required>
+</div>
 
         <div class="form-group">
             <label class="form-label">เลือกประเภทเครื่องใช้ไฟฟ้าที่พบปัญหา</label><br>
