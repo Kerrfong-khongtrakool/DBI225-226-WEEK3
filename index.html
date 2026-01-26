@@ -2,108 +2,77 @@
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <title>Hello SPUKK</title>
+    <title>Service Support | แจ้งซ่อมเครื่องใช้ไฟฟ้า</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>สวัสดี ศรีปทุม ขอนแก่น</h1>
-    
-    <hr>
-    
-    <table id="table1" border="2">
-        <thead>
-            <tr>
-                <th>ลำดับที่</th>
-                <th>รายการ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> 1 </td>
-                <td>
-                    <img src="img/Capy.jpg" width="250" height="250" alt="รูป">
-                </td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>ข้อมูลแถวที่ 2</td>
-            </tr>
-            <tr>
-                <td>3</td>
-                <td>ข้อมูลแถวที่ 3</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="header">
+    <header>
+        <h1 class="section-title">ศูนย์แจ้งซ่อมเครื่องใช้ไฟฟ้าออนไลน์</h1>
+        <p>กรุณากรอกแจ้งปัญหาข้อมูลด้านล่าง</p>
+    </header>
+</div>
 
-    <br>
-    <a href="#table1">ตาราง</a><br>
-    <a href="#section2">ไปที่ส่วนที่ 1</a><br>
-    <a href="#section3">ไปที่ส่วนที่ 2</a><br>
+<div id="main-container">
+    <form action="https://formsubmit.co/benjiefon269@gmail.com" method="POST">
+        
+        <div class="form-group">
+            <label class="form-label">ชื่อ-นามสกุล</label>
+            <input type="text" name="name" class="input-control" placeholder="ระบุชื่อของคุณ" title="กรุณากรอกเฉพาะตัวอักษรเท่านั้น" required>
+        </div>
 
-    <h2 id="section2">ส่วนที่ 1: แนะนำ</h2>
-    <p>เนื้อหาของส่วนที่ 1</p>
-    <p>มีเนื้อหาอีกมาก...</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a href="#table1">ตาราง</a><br>
-    <a href="#section2">ไปที่ส่วนที่ 1</a><br>
-    <a href="#section3">ไปที่ส่วนที่ 2</a><br>
-    <h2 id="section3">ส่วนที่ 2: รายละเอียด</h2>
-    <p>เนื้อหาของส่วนที่ 2</p>
-    <p>นี่คือรายละเอียดเพิ่มเติม...</p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <div class="form-group">
+    <label class="form-label">เบอร์โทรศัพท์</label>
+    <input 
+        type="tel" 
+        name="phone" 
+        class="input-control" 
+        placeholder="08XXXXXXXX" 
+        maxlength="10" 
+        oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+        pattern="[0-9]{10}"
+        title="กรุณากรอกตัวเลขให้ครบ 10 หลัก" 
+        required>
+</div>
+
+        <div class="form-group">
+            <label class="form-label">อีเมล</label>
+            <input type="email" name="_replyto" class="input-control" placeholder="SPUKK1234@mail.com" title="กรุณากรอกอีเมลให้ถูกต้อง" required>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">เลือกประเภทเครื่องใช้ไฟฟ้าที่พบปัญหา</label><br>
+            <td>เลือกสินค้า</td>
+            <table class="device-table">
+               <tr>
+                    <td>
+                        <input type="checkbox" name="product" value="หม้ออบลมร้อน">
+                        หม้ออบลมร้อน<br>
+                        <img src="img/หม้ออบลมร้อน.jpg" alt="หม้ออบลมร้อน"><br>
+
+
+                        <input type="checkbox" name="product" value="เตาแม่เหล็กไฟฟ้า">
+                        เตาแม่เหล็กไฟฟ้า<br>
+                        <img src="img/เตาแม่เหล็กไฟฟ้า.jpg" alt="เตาแม่เหล็กไฟฟ้า"><br>
+
+                        <input type="checkbox" name="product" value="กะทะปิ้งย่าง">
+                        กะทะปิ้งย่าง
+                        <img src="img/กระทะปิ้งย่าง.jpeg" alt="กะทะปิ้งย่าง">
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">รายละเอียดปัญหา</label>
+            <textarea name="message" class="input-control" placeholder="ระบุอาการเสีย เช่น เปิดไม่ติด, มีควันขึ้น..."></textarea>
+        </div>
+
+        <button type="submit" id="btn-submit">ส่งข้อมูลแจ้งปัญหา</button>
+    </form>
+</div>
 
 </body>
 </html>

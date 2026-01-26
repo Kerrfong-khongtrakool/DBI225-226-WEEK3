@@ -1,32 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Sarabun', sans-serif;
+}
+
 body {
-    background-color: lightgreen; 
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+    color: gray;
 }
 
-h1 {
-    color: blue;               
-    font-family: sans-serif;   
-    background-color: lightgray; 
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-hr {
-    border: 2px solid black;   
+.section-title {
+    color: #3696f7;
+    margin-bottom: 5px;
 }
 
-table {
-    background-color: aqua;    
-    border-color: pink;        
-    border-collapse: collapse; 
+.header p {
+    color: #7f8c8d;
 }
 
-th {
-    color: white;              
-    font-weight: bold;         
-    text-align: center;        
-    padding: 5px;             
-    border: 2px solid pink;
+
+#main-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-td {
-    padding: 5px;              
-    border: 2px solid pink;    
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2f4861;
+}
+
+
+.input-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid blanchedalmond    ;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-control:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgb(122, 122, 204);
+}
+
+textarea.input-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+.device-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.device-table td {
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+}
+
+
+.device-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: block;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+
+#btn-submit {
+    width: 100%;
+    background-color: #205536;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#btn-submit:hover {
+    background-color: #0a3f20;
+}
+
+@media (max-width: 480px) {
+    #main-container {
+        padding: 20px;
+    }
 }
